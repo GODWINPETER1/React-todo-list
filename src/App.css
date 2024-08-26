@@ -1,0 +1,139 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center; /* Center text within the container */
+  
+}
+
+
+/* Input container */
+.input-container {
+  margin-bottom: 20px;
+}
+
+/* Input field */
+input[type="text"] {
+  padding: 10px;
+  width: 300px; /* Adjust width as needed */
+  border: 2px solid #007bff; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 16px;
+  outline: none; /* Remove outline */
+}
+
+/* Input field focus style */
+input[type="text"]:focus {
+  border-color: #0056b3; /* Change border color on focus */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+}
+
+.task-list {
+  width: 100%;
+}
+
+
+.action-icon{
+  color: rgb(255, 230, 109);
+  padding: 10px 5px;
+  margin-left: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+.task-number {
+  margin-right: 10px;
+  margin-left: 10px;
+  
+}
+.task-content {
+  flex-grow: 1;
+}
+
+
+
+/* Task actions */
+.task-actions {
+  display: flex;
+  margin-left: auto; /* Push task actions to the right */
+}
+
+.task input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Additional styles for completed tasks */
+.task.completed {
+  text-decoration: line-through;
+}
+
+/* Styles for the Add Task button */
+button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+.button-1 {
+  background: linear-gradient(109.6deg, rgb(255, 230, 109) 11.2%, rgb(87, 232, 107) 100.2%);
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  left: 20px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .card {
+    max-width: 300px; /* Adjust as needed */
+  }
+}
